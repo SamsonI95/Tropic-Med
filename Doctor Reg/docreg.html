@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="docreg.css">
+    <title>TM-DocRegister</title>
+</head>
+<body>
+    <button id="openRegister">Register</button>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <span class="close-button" id="closeButton">&times;</span>
+        <!--<h2>Sign In</h2>-->
+        <form id="signupForm">
+              <img
+                style="
+                width: 40px;
+                height: 40px;"
+                class="logo-sgn"
+                src="assets/Logo.jpg"
+                alt="logo"/>
+              <div class="header-container">
+                <h1><span style="color: #1BC576;">Hello </span><span style="color: #FF6B00;">Doctor!</span>
+                <p>Enter your Credentials to complete registration</p>
+            </div>
+              <div class="input-block">
+                    <input type="text" id="input-fn" name="first-name" required>
+                    <span class="fn-placeholder">First Name</span>
+              </div>      
+              <div class="input-block">
+                    <input type="text" id="input-ln" name="last-name" required>
+                    <span class="ln-placeholder">Last Name</span>
+              </div>
+              <div class="input-block">
+                <input type="text" id="input-spec" name="specialization" required>
+                <span class="spec-placeholder">Specialization</span>
+              </div>      
+              <div class="input-block">
+                <input type="text" id="input-lcauth" name="licence-authority" required>
+                <span class=lcauth-placeholder">Licence Authority</span>
+              </div>
+              <div class="input-block">
+                <input type="number" id="input-lcnumber" name="licence-number" pattern="[0-9]{4}" required>
+                <span class="lcnumber-placeholder">Licence Number</span>
+              </div>
+            
+              <div class="input-block">
+                <input type="phone" id="phone" name="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
+                <span class="phone-placeholder">Phone Number</span>
+              </div>
+            
+              <label>
+                <input class="checkbox" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I Agree to the <a href="#" class="checkbox-text">Terms and Conditions</a>
+              </label>
+
+              <button class="submit" type="submit" id="submitButton">Verify</button>
+
+              <div class="alternate-sign">
+                <h2 class="alt-sign-text" style="text-align:center">Already have an account?<a href="#"> Sign In</a></h2>
+              </div>
+
+              <div class="alternate-icons">
+                <div class="google-icon">
+                    <div class="gimage">
+                        <img src="assets/icons8-google-24.png" alt="google-icon" style="height: 24px; width: 24px; top: -5px;">
+                    </div>
+                    <div class="gtext">
+                        <a href="#"><h3 class="g-btn">Sign in with Google</h3></a>
+                    </div> 
+                </div>
+                <div class="apple-icon">
+                    <div class="aimage">
+                        <img src="assets/icons8-apple-logo-24.png" alt="apple-icon" style="height: 24px; width: 24px; top: -5px;">
+                    </div>
+                    <div class="atext">
+                        <a href="#"><h3 class="a-btn">Sign in with Apple</h3></a>
+                    </div>  
+                </div>
+              </div>
+          </form>
+        <!--<form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit" id="submitButton">Submit</button>
+        </form>-->
+    </div>
+    
+    <script src="docreg.js"></script>
+</body>
+</html>

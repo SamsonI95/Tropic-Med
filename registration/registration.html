@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="regstyle.css">
+    <title>TM-Register</title>
+</head>
+<body>
+    <button id="openRegister">Register</button>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <span class="close-button" id="closeButton">&times;</span>
+        <!--<h2>Sign In</h2>-->
+        <form id="signupForm">
+              <img
+                style="
+                width: 40px;
+                height: 40px;"
+                class="logo-sgn"
+                src="assets/Logo.jpg"
+                alt="logo"/>
+              <div class="header-container">
+                <h1><span style="color: #1BC576;">Welcome </span><span style="color: #FF6B00;">To </span><span style="color: #1BC576;">Tropic</span><span style="color: #FF6B00;">Med</span></h1>
+                <p>Enter your Credentials to register your account</p>
+            </div>
+              <div class="input-block">
+                    <input type="text" id="input-email" name="email" required>
+                    <span class="email-placeholder">Email address</span>
+              </div>      
+              <div class="input-block">
+                    <input type="password" id="input-password" name="psw" required>
+                    <span class="pass-placeholder">Password</span>
+              </div>
+              <div class="input-block">
+                <input type="c.password" id="repeat-password" name="cpsw" required>
+                <span class="cpass-placeholder">Confirm Password</span>
+              </div>
+              <div class="select-block">
+                    <select name="role" id="role" class="role"> 
+                      <option value="other">Select User Type</option>
+                      <option value="customer">Customer</option>
+                      <option value="doctor">Doctor</option>
+                      <option value="service provider">Service Provider</option>
+                    </select>
+              </div>
+
+              <button class="submit" type="submit" id="submitButton">Register</button>
+
+              <div class="alternate-sign">
+                <h2 class="alt-sign-text" style="text-align:center">Already have an account?<a href="#"> Sign In</a></h2>
+              </div>
+
+              <div class="alternate-icons">
+                <div class="google-icon">
+                    <div class="gimage">
+                        <img src="assets/icons8-google-24.png" alt="google-icon" style="height: 24px; width: 24px; top: -5px;">
+                    </div>
+                    <div class="gtext">
+                        <a href="#"><h3 class="g-btn">Sign in with Google</h3></a>
+                    </div> 
+                </div>
+                <div class="apple-icon">
+                    <div class="aimage">
+                        <img src="assets/icons8-apple-logo-24.png" alt="apple-icon" style="height: 24px; width: 24px; top: -5px;">
+                    </div>
+                    <div class="atext">
+                        <a href="#"><h3 class="a-btn">Sign in with Apple</h3></a>
+                    </div>  
+                </div>
+              </div>
+          </form>
+        <!--<form id="signupForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit" id="submitButton">Submit</button>
+        </form>-->
+    </div>
+    
+    <script src="reg.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+body{
+    /*background-color: #c9d6ff;*/
+    background-image: linear-gradient(rgba(224, 94, 0, 0.25),rgba(224, 94, 0, 0.25)), url(assets/pills.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial;
+}
+
+/* Styles for the overlay*/ 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(224, 94, 0, 0.25),rgba(224, 94, 0, 0.25)), url(assets/pills.png);
+    background-position: center;
+    background-size: cover;
+    /*background-color: #E05E0040;*/
+    opacity: 2;
+    z-index: 1;
+}
+
+/* Styles for the popup*/ 
+.popup {
+    top: 45%;
+    left: 18%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    /*background-image: url(assets/pills3.jpg);*/
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    /*overflow: hidden;*/
+    width: 450px;
+    height: 600px;
+    /*max-width: 100%;*/
+    /*min-height: 480px;*/
+}
+
+/*Style the header*/
+.logo-sgn{
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.header-container h1{
+    position: relative;
+    top: 4px;
+    left: 135px;
+}
+
+.header-container p{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+
+/*.popup form{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}*/
+
+.input-block{
+    position: relative;
+    top: 32px;
+    left: 45px;
+    margin-bottom: 25px;
+}
+
+.popup .input-block input{
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 340px;
+    outline: none;
+    position: relative;
+    border: 1px solid  grey;
+}
+
+div.input-block span {
+    position: absolute;
+    margin: 17px 0;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 17px;
+    transition: all 0.2s;
+    transform-origin: 0% 0%;
+    background: none;
+    pointer-events: none;
+}
+
+div.input-block input:valid + span,
+div.input-block input:focus + span {
+    transform: scale(0.8) translateY(-20px);
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: white;
+}
+
+div.input-block input:focus{
+    color: #284B63;
+    border-color: grey;
+}
+
+div.input-block input:focus + span {
+    color: #284B63;
+}
+
+.forgot{
+    position: relative;
+    top: 40px;
+    left: 35%;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: black;
+}
+
+.forgot a:hover{
+    color: #1BC576;
+}
+
+label{
+    position: relative;
+    top: 63px;
+    left: 27%;
+}
+
+.submit{
+    position: relative;
+    top: 80px;
+    left: 25px;
+    width: 380px;
+    padding: 10px 150px;
+    border-radius: 16px;
+    border: none;
+    background-color: #FF6B00;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: #1BC576;
+}
+
+.alternate-sign{
+    position: relative;
+    top: 95px;
+}
+
+.alternate-sign h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.alternate-sign h2 a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.alternate-icons{
+    position: relative;
+    top: 50px;
+    display: flex;
+    /*padding: 4px 20px;*/
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    gap: 10px;
+}
+
+.google-icon{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    top: 60px;
+    border: .5px solid #D9D9D9;
+    border-radius: 10px;
+    width: 190px;
+    left: 30px;
+}
+
+.google-icon:hover{
+    background-color: #1BC576;
+}
+
+.gimage{
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.gtext{
+    position: relative;
+    left: 20px;
+    font-size: 12px;
+}
+
+.gtext a{
+    text-decoration: none;
+    color: black;
+}
+
+.apple-icon{
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    top: 4.5px;
+    width: 175px;
+    left: 240px;
+}
+
+.apple-icon:hover{
+    background-color: #1BC576;
+}
+
+.aimage{
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
+.atext{
+    position: relative;
+    left: 19px;
+    font-size: 12px;    
+}
+
+.atext a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Style for the close button*/ 
+.close-button {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 36px;
+    cursor: pointer;
+}
+.close-button:hover{
+    color: #FF6B00;
+}

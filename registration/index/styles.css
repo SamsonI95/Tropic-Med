@@ -1,0 +1,741 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial;
+    padding: 10px;
+    margin: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    width: 100%;
+}
+.heading{
+    box-sizing: border-box;
+    padding: 10px;
+}
+.container {
+    display: block;
+    cursor: pointer;
+    margin-right: 0;
+}
+  
+.bar1, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #1BC576;
+    margin: 6px 0;
+    /*transition: 0.4s;*/
+}
+  
+.bar2{
+    width: 25px;
+    height: 5px;
+    background-color: #FF6B00;
+    margin: 6px 0;
+    /*transition: 0.4s;*/
+}
+.topnav {
+    overflow: hidden;
+    display: block;
+    padding: 10px 16px;
+}
+.logo-container{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: -40px;
+    left: 95px;
+}
+h2{
+    float: left;
+    position: relative;
+    left: 55px;
+    bottom: 55px;
+}
+.sidenav {
+    height: 80%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.dtext{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    color: #FF6B00;
+}
+.dimage1{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; 
+    border: 10px;
+    top: 0;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.3s;
+    text-decoration: none;
+    align-items: center;
+}
+.sidenav a:hover {
+    color: #FF6B00;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.submit{
+    border: none;
+    background-color: white;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+    left: 30px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.submit:hover{
+    color: #FF6B00;
+}
+.buttons{
+    float: right;
+    right: 105px;
+    position: relative;
+    top: -65px;
+}
+#sign{
+    background-color: #FF6B00;
+    color: black;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 50px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+#sign:hover{
+    background-color: #1BC576;
+}
+#openRegister{
+    border: none;
+    background-color: white;
+    position: relative;
+    right: 40px;
+    cursor: pointer;
+    font-size: medium;
+    font-weight: bold;
+}
+#openRegister:hover{
+    color: #FF6B00;
+}
+.dimage{
+    float: right;
+    position: relative;
+    left: 110px;
+    top: -40px;
+    margin-right: 40px;
+    visibility: hidden;
+}
+.modal{
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    float: left;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.sign-container{
+    max-width: 460px;
+    height: 651px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 0.5px solid;
+    border-radius: 16px;
+}
+.welcome{
+    box-sizing: border-box;
+}
+.info{
+    position: relative;
+    top: -70px;
+    right: 20px;
+}
+.info-text{
+    position: relative;
+    box-sizing: border-box;
+    font-size: 50px;
+    top: -300px;
+    width: 450px;
+    line-height: 1.5;
+    left: 150px;
+}
+.sponsors{
+    border: 5px solid #1BC576;
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    top: 45px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    left: 20px;
+}
+.services{
+    display: flex;           
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    float: left;
+    right: 200px;
+    top: 150px;
+    margin: auto;
+}
+.services-card{
+    position: relative;
+    display: inline;
+    border-radius: 8px;
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
+    box-shadow: white;
+    margin-left: 30px;
+}
+.services-card:hover{
+    transform: translateY(-16px);
+    cursor: pointer;
+}
+.services-image{
+    position: relative;
+}
+.services-text{
+    position: relative;
+    font-size: small;
+    top: 10px;
+    text-align: center;
+}
+.quote{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-weight: 400;
+    font-size: x-large;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    top: -50px;
+    right: 50px;
+}
+.row{
+    background: #E2FEF9;
+    height: 425px;
+    width: auto;
+    margin: 45px;
+    position: relative;
+    top: 500px;
+    visibility: ;
+}
+.column{
+    float: left;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+    max-width: 400px;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    top: -210px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    right: 240px;
+    text-align: justify;
+    visibility: ;
+}
+.Happy{
+    position: relative;
+    left: 160px;
+    top: -50px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.personnel-row{
+    position: relative;
+    top: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px,1fr));
+    grid-gap: 20px;
+    text-align: center;
+    padding: 1em;
+    max-width: 30rem;
+    left: 220px;
+    float: left;
+}
+.counter-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text1{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    font-family: Arial;
+}
+.text2{
+    font-size: 14px;
+    margin-top: 5px;
+    font-family: Arial;
+    font-weight: bold;
+}
+.capacity{
+    display: flex;
+    position: relative;
+    bottom: 200px;
+    justify-content: center;
+    width: 350px;
+}
+.justified-text{
+    position: relative;
+    font-family: Arial;
+    left: 250px;
+    display: flex;
+    text-align: left;
+    text-justify: none;
+}
+.feature-text{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    top: 750px;
+    float: left;
+}
+.txt{
+    font-size: 48px;
+    font-family: arial;
+    font-weight: 700;
+}
+.underline{
+    width: 150px;
+    height: 10px;
+    background-color: #FF6B00;
+    display: flex;
+    position: relative;
+    top: 30px;
+    left: 30%;
+}
+.story-card{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    top: 500px;
+}
+.card-child{
+    position: relative;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+    width: 288px;
+    height: 580px;
+    border-radius: 10px;
+    margin-left: 35px;
+    float: left;
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.26);
+}
+.card-child:hover{
+    transform: translateY(-16px);
+    cursor: pointer;
+}
+.card-image{
+    position: relative;
+    align-items: center;
+    border-radius: 10px;
+    right: 25px;
+    top: -25px;
+}
+.hover-text h2{
+    position: relative;
+    top: -35px;
+    left: -20px;
+    text-align: justify;
+    padding: 10px 0;
+    width: 245px;
+    height: 60px;
+    font-size: 22px;
+    word-wrap: break-word;
+}
+.hover-text a{
+    text-decoration: none;
+    transition: 0.2s ease;
+    color: black;
+    cursor: pointer;
+}
+.hover-text a:hover{
+    color: #FF6B00;
+}
+.expand-text p{
+    position: relative;
+    width: 240px;
+    height: 120px;
+    text-align: justify;
+    float: left;
+    top: -40px;
+    left: -20px;
+    font-weight: 400;
+    line-height: 28.80px;
+    font-weight: 400;
+}
+.bottom-card{
+    position: relative;
+    float: left;
+}
+.bottom-card-image{
+    position: relative;
+    left: -55px;
+    top: -35px;
+}
+.bottom-card-name{
+    position: relative; 
+    font-size: small;
+    top: -75px;
+    left: 20px;
+}
+.bottom-card-date{
+    position: relative; 
+    font-size: x-small;
+    color: #727272;
+    left: 130px;
+    top: -105px;
+    font-weight: bold;
+}
+.more{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    top: 550px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.more a{
+    transition: 0.2s ease;
+    color: black;
+    cursor: pointer;
+}
+.more a:hover{
+    color: #FF6B00;
+}
+.frequent-text{
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    position: relative;
+    top: 600px;
+    left: 20px;
+}
+.txt1{
+    font-size: 48px;
+    font-family: arial;
+    font-weight: 700;
+}
+.underline1{
+    width: 150px;
+    height: 10px;
+    background-color: #FF6B00;
+    display: flex;
+    position: relative;
+    top: 10px;
+    right: 15px;
+}
+.questions{
+    display: grid;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    top: 650px;
+}
+.collapsible {
+    cursor: pointer;
+    padding: 18px;
+    width: 607px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #A3A3A3;
+}
+  
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2212";
+}
+  
+.content {
+    padding: 0;
+    max-height: 0;
+    width: 607px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 10px;
+    /*border: 2px solid #FF6B00;*/
+}
+.content p{
+    position: relative;
+    left: 10px;
+}
+.footer-con{
+    max-width: 1170px;
+	margin:auto;
+    font-family: arial;
+}
+.footer-row{
+    display: flex;
+	flex-wrap: wrap;
+    position: relative;
+    left: 60px;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #CBCFDC;
+    padding: 70px 0;
+    position: relative;
+    bottom: -800px;
+    width: 1440px;
+    right: 20px;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+ }
+.footer-logo{
+    display: flex;
+    float: left;
+    position: relative;
+    top: 20px;
+    left: -150px;
+ }
+ .footer-logo-text{
+    position: relative;
+    top: 10px;
+    left: -130px;
+ }
+ .footer-col h4{
+     font-size: 18px;
+     left: -80px;
+     text-transform: capitalize;
+     margin-bottom: 35px;
+     font-weight: 500;
+     position: relative;
+ }
+ .footer-col h4::before{
+     content: '';
+     position: absolute;
+     left:0;
+     bottom: -10px;
+     background-color: #FF6B00;
+     height: 2px;
+     box-sizing: border-box;
+     width: 50px;
+ }
+ .footer-col ul li:not(:last-child){
+     margin-bottom: 10px;
+ }
+ .footer-col ul li a{
+    position: relative;
+    right: 120px;
+     font-size: 16px;
+     text-transform: capitalize;
+     color: black;
+     text-decoration: none;
+     font-weight: 300;
+     display: block;
+     transition: all 0.3s ease;
+ }
+ .footer-col ul li a:hover{
+     color: #FF6B00;
+     padding-left: 8px;
+ }
+ .footer-col .social-links{
+    position: relative;
+    right: 80px;
+ }
+ .footer-col .social-links a{
+     display: inline-block;
+     height: 40px;
+     width: 40px;
+     background-color: #1BC576;
+     margin:0 10px 10px 0;
+     text-align: center;
+     line-height: 40px;
+     border-radius: 50%;
+     color: #ffffff;
+     transition: all 0.5s ease;
+ }
+.footer-col .social-links a:hover{
+     color: #FF6B00;
+     background-color: #ffffff;
+}
+
+/**create for phone sizes*/
+@media screen and (max-width: 430px) {
+    
+    body{
+        width: 100%;
+    }
+    .topnav{
+       overflow: visible;
+       max-width: 100%;
+    }
+    .sidenav{
+        height: 20%;
+    }
+    .dimage{
+        position: relative;
+        left: 600px;
+        top: -80px;
+    }
+    .buttons{
+        position: relative;
+        right: -850px;
+        top: -140px;
+    }
+    .sponsors{
+        position: relative;
+        top: -250px;
+        left: 145%;
+    }
+    .services{
+        position: relative;
+        top: -100px;
+        left: 55%;
+    }
+    .services-card{
+        position: relative;
+        display: inline;
+        border-radius: 8px;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+        box-shadow: white;
+        margin-left: 40px;
+    }
+    .info{
+        position: relative;
+        align-items: center;
+    }
+    .row{
+        position: relative;
+        left: 100px;
+        width: 300%;
+        top: 600px;
+    }
+    .column{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        left: 50px;
+        bottom: 400px;
+    }
+    .quote{
+        position: relative;
+        top: -400px;
+        padding-left: 50px;
+    }
+    .Happy{
+        position: relative;
+        top: -390px;
+        padding-right: 50px;
+    }
+    .personnel-row{
+        position: relative;
+        top: 50px;
+    }
+    .feature-text{
+        position: relative;
+        top: 50px;
+        left: 150%;
+    }
+    .txt{
+        position: relative;
+        width: 400px;
+        left: -50px;
+        top: 50px;
+    }
+    .underline{
+        position: relative;
+        align-items: center;
+    }
+    .story-card{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 150%;
+        top: 200px;
+        left: 30px;
+    }
+    .card-child{
+        position: relative;
+        width: 288px;
+        height: 580px;
+        border-radius: 10px;
+        float: left;
+    } 
+    .more{
+        position: relative;
+        top: 300px;
+        align-items: center;
+        left: 145%;
+    }
+    .frequent-text{
+        position: relative;
+        justify-content: center;
+        top: 400px;
+        left: 150%;
+    }   
+    .questions{
+        position: relative;
+        top: 500px;
+        left: 110%;
+    }
+} 
+

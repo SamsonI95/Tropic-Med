@@ -58,15 +58,14 @@ signupForm.addEventListener('submit', (e) => {
     let tinNumber = document.getElementById('tin').value;
     
     //store user detail
-    localStorage.setItem('input-bn', businessName);
+    /*localStorage.setItem('input-bn', businessName);
     localStorage.setItem('input-ba', businessAddress);
     localStorage.setItem('input-email', email);
     localStorage.setItem('input-bt"', businessType);
     localStorage.setItem('phone', phone);
     localStorage.setItem('cac', cacNumber);
-    localStorage.setItem('tin', tinNumber);
+    localStorage.setItem('tin', tinNumber);*/
     
     alert("Saved Successfully!!")
-
 })
 

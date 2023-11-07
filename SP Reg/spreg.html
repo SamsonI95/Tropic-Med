@@ -2,6 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="spstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>TM-SPRegister</title>
 </head>
 <body>
@@ -50,7 +51,27 @@
                 <input type="number" id="tin" name="tin-number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
                 <span class="tinnumber-placeholder">TIN Number</span>
               </div>
-            
+              <div class="input-block">
+                <input type="password" id="input-password" name="password" required>
+                <span class="pass-placeholder">Password</span>
+                <i class="fa-solid fa-eye" id="show-password"></i>
+                <div class="password-validation">
+                  <p class="requirement">Password must contain...</p>
+                  <ul>
+                    <li><span class="icon"></span>At least 8 characters long</li>
+                    <li><span class="icon"></span>At least one uppercase letter</li>
+                    <li><span class="icon"></span>At least one lowercase letter</li>
+                    <li><span class="icon"></span>At least one number</li>
+                    <li><span class="icon"></span>At least one special character</li>
+                  </ul>
+                </div>
+          </div>
+          <div class="input-block">
+            <input type="password" id="repeat-password" name="cpassword" required>
+            <span class="cpass-placeholder">Confirm Password</span>
+            <i class="fa-solid fa-eye" id="show-password1"></i>
+          </div>
+
               <label>
                 <input class="checkbox" type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> I Agree to the <a href="#" class="checkbox-text">Terms and Conditions</a>
               </label>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: linear-gradient(rgba(27, 197, 118, 0.25),rgba(27, 197, 118, 0.25)), url(assets/smdc.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial;
+}
+
+/* Styles for the overlay*/ 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    opacity: 2;
+    z-index: 1;
+}
+
+/* Styles for the popup*/ 
+.popup {
+    top: 45%;
+    left: 20%;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 10px;
+    z-index: 2;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    width: 525px;
+    height: 494px;
+}
+
+/*Style the header*/
+.logo-sgn{
+    position: absolute;
+    top: 30px;
+    left: 80px;
+}
+
+.header-container h1{
+    position: relative;
+    top: 30px;
+    left: 150px;
+    font-size: 27px;
+}
+
+.header-container p{
+    position: relative;
+    top: 90px;
+    text-align: center;
+}
+
+/*Content styling*/
+.select-block{
+    position: relative;
+    top: 150px;
+    left: 85px;
+    margin-bottom: 15px;
+}
+
+.role{
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 370px;
+    outline: none;
+    position: relative;
+    border: 1px solid  grey; 
+}
+
+option{
+    border: 1px solid  #1BC576;
+    border-radius: 8px; 
+}
+
+/*Button styling*/
+.submit{
+    position: relative;
+    top: 250px;
+    left: 75px;
+    width: 380px;
+    padding: 10px 150px;
+    border-radius: 16px;
+    border: none;
+    background-color: #FF6B00;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.submit:hover{
+    cursor: pointer;
+    background-color: #1BC576;
+}
+
+.alternate-sign{
+    position: relative;
+    top: 300px;
+}
+
+.alternate-sign h2{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.alternate-sign h2 a{
+    text-decoration: none;
+    cursor: pointer;
+}

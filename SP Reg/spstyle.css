@@ -27,7 +27,7 @@ body{
 
 /* Styles for the popup*/ 
 .popup {
-    top: 70%;
+    top: 90%;
     left: 20%;
     bottom: 50%;
     align-items: center;
@@ -130,6 +130,69 @@ div.input-block input:focus{
 
 div.input-block input:focus + span {
     color: #284B63;
+}
+
+#show-password{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: grey;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+#show-password1{
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: grey;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.password-validation {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: 5px;
+    padding: 2px;
+    font-size: 12px;
+    display: none;
+}
+
+.password-validation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.password-validation li {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.password-validation .icon {
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.password-validation.valid li {
+    color: green;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.password-validation.valid .icon {
+    background-color: green;
 }
 
 label{

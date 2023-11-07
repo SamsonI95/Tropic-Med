@@ -24,6 +24,25 @@ document.getElementById("openRegister").addEventListener("submit", function(even
     window.location.href = "index.html";
 });
 
+//password toggle
+var passwordInput = document.getElementById('input-password');
+var eyeIcon = document.getElementById('show-password');
+
+eyeIcon.addEventListener("click", () =>{
+    //toggle password input type between text and password
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+    eyeIcon.className = `fa-solid fa-eye${passwordInput.type === "password" ? "" : "-slash"}`;
+  });
+  
+  //confirm password toggle
+  var passwordRinput = document.getElementById('repeat-password');
+  var eyeRicon = document.getElementById('show-password1');
+  
+  eyeRicon.addEventListener("click", () =>{
+    passwordRinput.type = passwordRinput.type === 'password' ? 'text' : 'password';
+    eyeRicon.className = `fa-solid fa-eye${passwordRinput.type === "password" ? "" : "-slash"}`;
+  });
+
 let form = document.getElementById('signupForm')
 
 signupForm.addEventListener('submit', (e) => {

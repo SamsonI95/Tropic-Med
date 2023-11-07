@@ -12,7 +12,7 @@ document.getElementById("closeButton").addEventListener("click", function() {
     popup.style.display = "none";
 });*/
 
-document.getElementById("openRegister").addEventListener("submit", function(event) {
+document.getElementById("signupForm").addEventListener("submit", function(event) {
     // Prevent the form from submitting and refreshing the page
     event.preventDefault();
     var overlay = document.getElementById("overlay");
@@ -24,6 +24,24 @@ document.getElementById("openRegister").addEventListener("submit", function(even
     window.location.href = "index.html";
 });
 
+//password toggle
+    var passwordInput = document.getElementById('input-password');
+    var eyeIcon = document.getElementById('show-password');
+
+eyeIcon.addEventListener("click", () =>{
+    //toggle password input type between text and password
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+    eyeIcon.className = `fa-solid fa-eye${passwordInput.type === "password" ? "" : "-slash"}`;
+});
+  
+//confirm password toggle
+  var passwordRinput = document.getElementById('repeat-password');
+  var eyeRicon = document.getElementById('show-password1');
+  
+eyeRicon.addEventListener("click", () =>{
+    passwordRinput.type = passwordRinput.type === 'password' ? 'text' : 'password';
+    eyeRicon.className = `fa-solid fa-eye${passwordRinput.type === "password" ? "" : "-slash"}`;
+});
 
 let form = document.getElementById('signupForm')
 

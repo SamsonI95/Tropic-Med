@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="regstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="uSstyles.css">
+  <title>User Select</title>
+</head>
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <form id="userSelect">
+              <img
+                style="
+                width: 40px;
+                height: 40px;"
+                class="logo-sgn"
+                src="assets/Logo.jpg"
+                alt="logo"/>
+              <div class="header-container">
+                <h1><span style="color: #1BC576;">Welcome </span><span style="color: #FF6B00;">To </span><span style="color: #1BC576;">Tropic</span><span style="color: #FF6B00;">Med</span></h1>
+                <p>Please select your user type to complete your registration</p>
+              </div>
+              <div class="select-block">
+                    <select name="role" id="role" class="role"> 
+                      <option value="other">Select User Type</option>
+                      <a href="registration.html"><option value="Customer">Customer</option></a>
+                      <a href="docreg.html"></a><option value="Doctor">Doctor</option>
+                      <a href="spreg.html"></a><option value="Service Provider">Service Provider</option>
+                    </select>
+              </div>
+              
+              <button class="submit" type="submit" id="nextButton">Next</button>
+
+              <div class="alternate-sign">
+                <h2 class="alt-sign-text" style="text-align:center">Already have an account?<a href="signin.html"> Sign In</a></h2>
+              </div>
+          </form>
+    </div>
+  <script src="userapp.js"></script>
+</body>
+</html>

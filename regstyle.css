@@ -1,11 +1,9 @@
-/*{
-    margin: 0;
-    padding: 0;
-}*/
+
 
 body{
     /*background-color: #c9d6ff;*/
-    background-image: linear-gradient(rgba(27, 197, 118, 0.25),rgba(27, 197, 118, 0.25)), url(assets/sidedoc.png);
+    
+    background-image: linear-gradient(rgba(27, 197, 118, 0.25),rgba(27, 197, 118, 0.25)), url(assets/smdc.png);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,51 +20,53 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
+    background-image: linear-gradient(rgba(27, 197, 118, 0.25),rgba(27, 197, 118, 0.25)), url(assets/smdc.png);
     background-position: center;
     background-size: cover;
+    /*background-color: #E05E0040;*/
     opacity: 2;
     z-index: 1;
 }
 
 /* Styles for the popup*/ 
 .popup {
-    top: 90%;
+    top: 45%;
     left: 20%;
     align-items: center;
     justify-content: center;
     transform: translate(-50%, -50%);
+    /*background-image: url(assets/pills3.jpg);*/
     background-color: #fff;
     padding: 10px;
     z-index: 2;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
+    /*overflow: hidden;*/
     width: 450px;
+    height: 600px;
+    /*max-width: 100%;*/
+    /*min-height: 480px;*/
 }
 
 /*Style the header*/
 .logo-sgn{
     position: absolute;
-    top: 20px;
-    left: 70px;
+    top: 30px;
+    left: 60px;
 }
 
 .header-container h1{
     position: relative;
-    top: 0;
-    left: 140px;
-    font-size: 30px;
+    top: 12px;
+    left: 100px;
+    font-size: 27px;
 }
 
 .header-container p{
     position: relative;
-    top: 5px;
-    right: 130px;
+    top: 30px;
     text-align: center;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 /*.popup form{
@@ -81,16 +81,16 @@ body{
 
 .input-block{
     position: relative;
-    top: 0;
-    left: 40px;
-    margin-bottom: 5px;
+    top: 40px;
+    left: 45px;
+    margin-bottom: 10px;
 }
 
 .popup .input-block input{
     border: none;
     margin: 8px 0;
     padding: 10px 15px;
-    font-size: 11px;
+    font-size: 13px;
     border-radius: 8px;
     width: 340px;
     outline: none;
@@ -153,54 +153,64 @@ div.input-block input:focus + span {
 
 .password-validation {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 0;
-    margin-top: 5px;
     padding: 2px;
     font-size: 12px;
     display: none;
+    z-index: 10;
 }
 
 .password-validation ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 5px;
     border: 1px solid grey;
     border-radius: 5px;
+    background-color: #fff;
+}
+
+.password-validation p {
+    position: relative;
+    left: 20px;
 }
 
 .password-validation li {
     display: flex;
     align-items: center;
     color: red;
-    margin-bottom: 5px;
 }
 
 .password-validation .icon {
     margin-right: 5px;
     width: 12px;
     height: 12px;
+    position: relative;
+    top: -1px;
+    left: 2px;
 }
 
 .password-validation.valid li {
     color: green;
     text-decoration: none;
-    margin-bottom: 5px;
 }
 
-.password-validation.valid .icon {
-    background-color: green;
-}
+.password-not-match {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    top: 35px;
+  }
 
-label{
-    position: relative;
-    top: 7px;
-    left: 20%;
+
+option{
+    border: 1px solid  #1BC576;
+    border-radius: 8px; 
 }
 
 .submit{
     position: relative;
-    top: 15px;
+    top: 70px;
     left: 35px;
     width: 380px;
     padding: 10px 150px;
@@ -218,7 +228,7 @@ label{
 
 .alternate-sign{
     position: relative;
-    top: 25px;
+    top: 100px;
 }
 
 .alternate-sign h2{
@@ -234,7 +244,7 @@ label{
 .alternate-icons{
     position: relative;
     /*top: 5px;*/
-    bottom: 5px;
+    bottom: -5px;
     display: flex;
     /*padding: 4px 20px;*/
     flex-direction: column;
@@ -246,11 +256,11 @@ label{
     position: relative;
     flex-direction: row;
     display: flex;
-    top: 45px;
+    top: 120px;
     border: .5px solid #D9D9D9;
     border-radius: 10px;
     width: 190px;
-    left: 35px;
+    left: 30px;
 }
 
 .google-icon:hover{
@@ -280,7 +290,7 @@ label{
     display: flex;
     border: 1px solid #D9D9D9;
     border-radius: 10px;
-    top: -10px;
+    top: 64.5px;
     width: 175px;
     left: 240px;
 }
@@ -310,7 +320,7 @@ label{
 .close-button {
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 30px;
     font-size: 36px;
     cursor: pointer;
 }

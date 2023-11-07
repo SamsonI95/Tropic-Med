@@ -124,13 +124,13 @@ signupForm.addEventListener('submit', (e) =>{
     // TODO: Send data to backend or perform necessary actions
     
     //local storage
-    localStorage.setItem('input-email', email);
-    localStorage.setItem('input-password', psw);
+    /*localStorage.setItem('input-email', email);
+    localStorage.setItem('input-password', psw);*/
 });
 
 
   // Function to handle the registration button click
-  function handleRegistration() {
+  /*function handleRegistration() {
     const roleSelect = document.getElementById("role");
     const selectedRole = roleSelect.value;
 
@@ -148,4 +148,4 @@ signupForm.addEventListener('submit', (e) =>{
 
   // Add an event listener to the registration button
   const registerButton = document.getElementById("submitButton");
-  registerButton.addEventListener("click", handleRegistration);
+  registerButton.addEventListener("click", handleRegistration);*/

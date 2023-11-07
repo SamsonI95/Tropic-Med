@@ -33,8 +33,6 @@ signupForm.addEventListener('submit', (e) =>{
 
     //local storage
 
-    localStorage.setItem('input-email', email);
-    localStorage.setItem('input-password', psw);
-
-    
+    /*localStorage.setItem('input-email', email);
+    localStorage.setItem('input-password', psw);*/
 })

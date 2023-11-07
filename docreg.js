@@ -57,13 +57,12 @@ signupForm.addEventListener('submit', (e) => {
     let phone = document.getElementById('phone').value;
 
     //store user detail
-    localStorage.setItem('input-fn', firstName);
+    /*localStorage.setItem('input-fn', firstName);
     localStorage.setItem('input-ln', lastName);
     localStorage.setItem('input-spec', specialization);
     localStorage.setItem('input-lcauth', licenceAuthority);
     localStorage.setItem('input-lcnumber', licenceNumber);
-    localStorage.setItem('phone', phone);
+    localStorage.setItem('phone', phone);*/
 
     alert("Saved Successfully!!")
-
 })
